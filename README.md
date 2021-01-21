@@ -45,6 +45,10 @@ This project has a UI Documentation of reusable components, allowing to test the
    <img src="docs/go-restaurant.gif" />
 </p>
 
+<p align="left">
+   <img src="docs/go-restaurant.png" />
+</p>
+
 <br />
 
 # :construction_worker: Installation
