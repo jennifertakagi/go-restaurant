@@ -1,34 +1,74 @@
-<p align="left">
-   <img src="docs/logo.png" width="150"/>
+<!-- Inspired by https://github.com/jennifertakagi/go-restaurant -->
+
+<!-- PROJECT SHIELDS -->
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
+
+
+
+<!-- PROJECT LOGO -->
+<br />
+<p align="center">
+  <a href="https://github.com/jennifertakagi/go-restaurant">
+    <img src="docs/logo.png" alt="Logo" width="200">
+  </a>
+
+  <h3 align="center">Go Restaurant</h3>
+
+  <p align="center">
+      A web and mobile application to manage your restaurant menu!
+    <br />
+    <a href="https://github.com/jennifertakagi/go-restaurant"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <a href="https://github.com/jennifertakagi/go-restaurant/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/jennifertakagi/go-restaurant/issues">Request Feature</a>
+  </p>
 </p>
 
-# Go Restaurant
 
-> An application to control your restaurant menu! :)
 
-[![Author](https://img.shields.io/badge/author-jennifertakagi-ff9000?style=flat-square)](https://github.com/jennifertakagi)
-[![Languages](https://img.shields.io/github/languages/count/jennifertakagi/go-restaurant?color=%23ff9000&style=flat-square)](#)
-[![Stars](https://img.shields.io/github/stars/jennifertakagi/go-restaurant?color=ff9000&style=flat-square)](https://github.com/jennifertakagi/go-restaurant/stargazers)
-[![Forks](https://img.shields.io/github/forks/jennifertakagi/go-restaurant?color=%23ff9000&style=flat-square)](https://github.com/jennifertakagi/go-restaurant/network/members)
-[![Contributors](https://img.shields.io/github/contributors/jennifertakagi/go-restaurant?color=ff9000&style=flat-square)](https://github.com/jennifertakagi/go-restaurant/graphs/contributors)
+<!-- TABLE OF CONTENTS -->
+<details open="open">
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+   <li><a href="#usage">Usage</a></li>
+    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#license">License</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#acknowledgements">Acknowledgements</a></li>
+  </ol>
+</details>
 
----
 
-# :pushpin: Table of Contents
 
-* [Features](#rocket-features)
-* [UI Documentation](#framed_picture-ui-documentation)
-* [Installation](#construction_worker-installation)
-* [Getting Started](#runner-getting-started)
-* [FAQ](#postbox-faq)
-* [Found a bug? Missing a specific feature?](#bug-issues)
-* [Contributing](#tada-contributing)
-* [License](#closed_book-license)
+<!-- ABOUT THE PROJECT -->
+## About The Project
 
-<br />
+[![Product Name Screen Shot][product-screenshot]](#)
 
-# :rocket: Features
+A web and mobile application to manage your restaurant menu.
 
+Features:
 * Check all the restaurant's dishes
 * Add new dish to the menu
 * Edit the existent dishes
@@ -36,61 +76,135 @@
 * Make dish available or not
 
 
-<br />
 
-# :framed_picture: UI Documentation
-This project has a UI Documentation of reusable components, allowing to test them individually.
+### Built With
+
+* [React JS](https://pt-br.reactjs.org/)
+* [React Native](https://reactnative.dev/)
+* [Styled-Components](https://styled-components.com/)
+* [TypeScript](https://www.typescriptlang.org/)
+* [Unform](https://github.com/unform/unform)
+* [Axios](https://github.com/axios/axios)
+* [Yup](https://github.com/jquense/yup)
+
+
+
+<!-- GETTING STARTED -->
+## Getting Started
+
+### Prerequisites
+
+* npm
+  ```sh
+  npm install npm@latest -g
+  ```
+
+* yarn
+  ```sh
+  npm install --global yarn
+  ```
+
+* [EXPO](https://expo.io/) - optional (if you prefer download Xcode and Cocoapods)
+
+* [Xcode](https://apps.apple.com/us/app/xcode/id497799835?mt=12)
+
+* [COCOAPODS](https://cocoapods.org/)
+
+
+### Installation
+
+1. Clone the repo
+   ```sh
+   git clone https://github.com/jennifertakagi/go-restaurant.git
+   ```
+2. Install packages on **mobile** and **web** folders
+   ```sh
+   yarn | npm install
+   ```
+3. In case you're using **Macbook**, please run the line above on **ios** folder:
+   ```sh
+   pod instal
+   ```
+4. Run JSON server **mobile** or **web** folder to mock database
+  ```sh
+   yarn json-server server.json -p 3333 | npm run json-server server.json -p 3333
+   ```
+5. Run the local environment on **mobile** folder
+   ```sh
+   yarn ios | android
+   ```
+6. Run the local environment on **web** folder
+   ```sh
+   yarn start | npm run start
+   ```
+
+
+
+<!-- USAGE EXAMPLES -->
+## Usage
 
 <p align="left">
    <img src="docs/go-restaurant.gif" />
 </p>
 
-<p align="left">
-   <img src="docs/go-restaurant.png" />
-</p>
 
-<br />
 
-# :construction_worker: Installation
+<!-- ROADMAP -->
+## Roadmap
 
-**You need to install [YARN](https://yarnpkg.com/) and [DOCKER](https://www.docker.com/), then in order to clone the project via HTTPS, run this command:**
+See the [open issues](https://github.com/jennifertakagi/go-restaurant/issues) for a list of proposed features (and known issues).
 
-```git clone https://github.com/jennifertakagi/go-restaurant.git```
 
-SSH URLs provide access to a Git repository via SSH, a secure protocol. If you have a SSH key registered in your Github account, clone the project using this command:
 
-```git clone git@github.com:jennifertakagi/go-restaurant.git```
+<!-- CONTRIBUTING -->
+## Contributing
 
-<br />
+Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-# :runner: Getting Started
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-Go to **web** and **mobile** folders and check the README to start each project.
 
-<br />
 
-# :postbox: Faq
+<!-- LICENSE -->
+## License
 
-**Question:** What are the technologies used in this project?
+Distributed under the MIT License. See `LICENSE` for more information.
 
-**Answer:** The technologies used in this project are [React JS](https://pt-br.reactjs.org/), [Styled-Components](https://styled-components.com/), [React Native](https://reactnative.dev/).
 
-<br />
 
-# :bug: Issues
+<!-- CONTACT -->
+## Contact
 
-Feel free to **file a new issue** with a respective title and description on the [Go Restaurant](https://github.com/jennifertakagi/go-restaurant/issues) repository. If you already found a solution to your problem, **i would love to review your pull request**! Have a look at our [contribution guidelines](https://github.com/jennifertakagi/go-restaurant/blob/master/CONTRIBUTING.md) to find out about the coding standards.
+Jennifer Takagi - [@jennitakagi](https://twitter.com/jennitakagi)
 
-<br />
 
-# :tada: Contributing
 
-Check out the [contributing](https://github.com/jennifertakagi/go-restaurant/blob/master/CONTRIBUTING.md) page to see the best places to file issues, start discussions and begin contributing.
+<!-- ACKNOWLEDGEMENTS -->
+## Acknowledgements
+* [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
+* [Supertest](https://www.npmjs.com/package/supertest)
+* [JSON Server](https://github.com/typicode/json-server)
+* [ESLint](https://eslint.org/)
+* [Prettier](https://prettier.io/)
 
-<br />
 
-# :closed_book: License
 
-Released in 2020.
-This project is under the [MIT license](https://github.com/jennifertakagi/go-restaurant/master/LICENSE).
-
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[contributors-shield]: https://img.shields.io/github/contributors/jennifertakagi/go-restaurant.svg?style=for-the-badge
+[contributors-url]: https://github.com/jennifertakagi/go-restaurant/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/jennifertakagi/go-restaurant.svg?style=for-the-badge
+[forks-url]: https://github.com/jennifertakagi/go-restaurant/network/members
+[stars-shield]: https://img.shields.io/github/stars/jennifertakagi/go-restaurant.svg?style=for-the-badge
+[stars-url]: https://github.com/jennifertakagi/go-restaurant/stargazers
+[issues-shield]: https://img.shields.io/github/issues/jennifertakagi/go-restaurant.svg?style=for-the-badge
+[issues-url]: https://github.com/jennifertakagi/go-restaurant/issues
+[license-shield]: https://img.shields.io/github/license/jennifertakagi/go-restaurant.svg?style=for-the-badge
+[license-url]: https://github.com/jennifertakagi/go-restaurant/blob/master/LICENSE.txt
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://linkedin.com/in/jennifertakagi
+[product-screenshot]: docs/go-restaurant.png
